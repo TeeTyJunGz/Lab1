@@ -34,11 +34,12 @@ void Nay(int arr[], int len){
 
 int main(){
     int arr[] = {1, 2, 1, 3, 1, 2, 2, 1, 3, 2, 4, 1, 2, 3, 1, 4, 1, 2, 1, 3, 1, 2, 1, 1, 4};
-    int len = sizeof(arr);
-    cout << "len = " << len;
+    int len = sizeof(arr)/sizeof(arr[0]);
+    cout << "len = " << len << "/n";
     int x,y = 0;
     for (int i = 0; i < len; i++){
         int path = arr[i];
+        cout << "path = " << path << "'n";
         switch (path)
         {
         case 1:
@@ -60,8 +61,4 @@ int main(){
 
     return 0;
 }
-
-
-
-
-
+}
