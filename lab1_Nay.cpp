@@ -23,9 +23,9 @@ void Nay(int arr[], int len){
             x += 1;
             break;
         }
-    }
-    if (x==0 && y ==0){
-        x,y = 1;
+        if (x == 0 && y == 0){
+            x,y = 1;
+        }
     }
     cout << x << ", " << y << "\n";
 }
