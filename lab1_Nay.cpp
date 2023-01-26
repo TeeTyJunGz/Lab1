@@ -22,15 +22,12 @@ void Nay(int arr[], int len){
         case 4:
             x += 1;
             break;
-        default:
-            break;
         }
     }
     if (x==0 && y ==0){
         x,y = 1;
     }
-    }
-    cout << out[0] << ", " << out[1] << "\n";
+    cout << x << ", " << y << "\n";
 }
 
 int main(){
